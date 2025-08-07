@@ -6,7 +6,7 @@ config()
 const url = process.env.DB_URL;
 const client = new MongoClient(url);
 
-const dbName = "complaints";
+const dbName = process.env.DB_NAME;
 let db;
 
 // ---- TODO - in case an error has occur the func will return 'undefined'
