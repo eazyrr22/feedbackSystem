@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anonymous report</title>
+    <link rel="stylesheet" href="complaint.css" />
+  </head>
+  <body>
+    
+    <form action="/complaint" method="post">
+      <section id="complaint details">
+        <label for="none">select the complaint topic:</label><br>
+        <select name="topic" id="none" multiple>
+          <option value="empty"selected>none</option>
+          <option value="food" >food</option>
+          <option value="cleanliness">cleanliness</option>
+          <option value="it">IT</option>
+          <option value="equipment">equipment</option>
+          <option value="orders">orders</option>
+        </select>
+      </section><br>
+
+      <section id="complaint_description">
+        <label for="complaint_dsrc">describe your complaint:</label><br />
+        <textarea name="complaint" id="complaint_dsrc"></textarea>
+      </section><br>
+      <br />
+      <input type="submit" value="send" />
+    </form>
+  </body>
+</html>
