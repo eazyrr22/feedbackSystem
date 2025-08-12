@@ -11,22 +11,22 @@
       <section id="complaint details">
         <label for="none">select the complaint topic:</label><br />
         <select name="topic" id="none">
-          <option value="empty" selected>none</option>
-          <option value="food">food</option>
-          <option value="cleanliness">cleanliness</option>
-          <option value="it">IT</option>
-          <option value="equipment">equipment</option>
-          <option value="orders">orders</option>
+          <option name="empty" value="empty" selected>none</option>
+          <option name="food" value="food">food</option>
+          <option name="cleanliness" value="cleanliness">cleanliness</option>
+          <option name="IT" value="it">IT</option>
+          <option name="equipment" value="equipment">equipment</option>
+          <option name="orders" value="orders">orders</option>
         </select>
       </section>
       <br />
 
       <section id="complaint_description">
         <label for="complaint_dsrc">describe your complaint:</label><br />
-        <textarea name="complaint" id="complaint_dsrc"></textarea>
+        <input type="text" name="complaint" id="complaint_dsrc"></input>
       </section>
       <br />
-      <br />
+  
       <input type="submit" value="send" />
     </form>
   </body>

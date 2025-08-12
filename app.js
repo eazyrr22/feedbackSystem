@@ -7,9 +7,11 @@ config()
 const port = process.env.SERVER_PORT
 
 const app = express();
+app.use(express.urlencoded({ extended: true })); 
 app.use(express.json())
 app.use(express.static('./public'))
 app.use('/complaint',complaintRouter)
+
 
 
 
