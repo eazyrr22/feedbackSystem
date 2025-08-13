@@ -1,0 +1,68 @@
+<!-- TODO ---- validation -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaints System</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #description {
+        padding-right: 50%;
+      }
+      body {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>welcome to the complaints system</h1>
+
+    <section id="description">
+      <p>
+        This is a system for sending complaints about every need, feel free to
+        report whatever bothers you,and we will do our best to take care and
+        improve our services.
+      </p>
+    </section>
+
+    <section id="next page link">
+      <label for="complaints page">just click here to start</label><br />
+      <a id="complaints page" href="./complaint.html">continue</a>
+    </section>
+
+    
+
+    <section id="log in">
+      <form action="/admin" method="post">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="username"
+          required
+        /><br><br>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+          minlength="6"
+          required
+        /><br><br>
+        <input type="submit" value="Submit" /><br />
+      </form>
+    </section>
+  </body>
+</html>
